@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell XPS 13 9310</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+        <button class="removeBTN" id="Showcart" onclick="showCart()">Show Cart</button>
+    </div>
+
+    <div class="productContainer">
+        <div class="product-details">
+            <img src="img/2.jpg" alt="Dell XPS 13 9310" class="product-image">
+            <div class="product-info">
+                <h2>Dell XPS 13 9310</h2>
+
+                <p class="description">13.4-inch, Intel i7 11th Gen, 16GB RAM, 512GB SSD</p>
+                <p class="price">$1199</p>
+                <button class="removeBTN" onclick="addToCart(2)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="required-products">
+        <h3>Required Products</h3>
+        <div class="product-list">
+            <div class="required-product">
+                <a href="product1.html">
+                    <!-- Link to the product page -->
+                    <img src="img/1.jpg" alt="Accessory 1">
+                    <p>Accessory 1</p>
+                    <p>$29</p>
+                </a>
+            </div>
+            <div class="required-product">
+                <a href="product3.html">
+                    <!-- Link to the product page -->
+                    <img src="img/3.jpg" alt="Accessory 2">
+                    <p>Accessory 2</p>
+                    <p>$49</p>
+                </a>
+            </div>
+            <div class="required-product">
+                <a href="product4.html">
+                    <!-- Link to the product page -->
+                    <img src="img/4.jpg" alt="Accessory 3">
+                    <p>Accessory 3</p>
+                    <p>$99</p>
+                </a>
+            </div>
+            <!-- Add more required products as needed -->
+        </div>
+    </div>
+
+
+    <div class="cart">
+        <div class="cart-header">
+            <h2>Cart</h2>
+            <button id="closeCart" onclick="closeCart()">X</button>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <h3>Total: $<span class="total">0</span></h3>
+        </div>
+        <div class="cartClear">
+            <button class="clearCart" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+    <div id="toast" class="toast hidden">
+        <p>Product Added to Cart</p>
+    </div>
+    <script src="SinglePAgeScript.js"></script>
+</body>
+
+</html>
